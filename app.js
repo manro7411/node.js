@@ -7,8 +7,12 @@ if (amount < 10) {
 
 console.log(`it's my first application!`)
 
-// global - no window 
-// __dirname - path to current directory
-// require - function to use modules 
-// module = info about current module 
-// process - info about env where the program is being executed
+console.log(__dirname);
+setInterval(() => {
+    console.log("Hello world");
+}, 1000);
+//modules 
+sayHi=(name)=>{
+    console.log(`Hello world ${name}`);
+}
+sayHi("Ratchanon Traitiprat")
