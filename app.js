@@ -1,4 +1,6 @@
-const amount = 12
+// CommonJS, every file is module (by default)
+// Modules - encapsulation code (Only share minimum)
+const amount = require('./global')
 if (amount < 10) {
     console.log('small number')
 }else{
@@ -8,11 +10,15 @@ if (amount < 10) {
 console.log(`it's my first application!`)
 
 console.log(__dirname);
-setInterval(() => {
+setTimeout(() => {
     console.log("Hello world");
+    
 }, 1000);
 //modules 
 sayHi=(name)=>{
-    console.log(`Hello world ${name}`);
+    console.log(`Hello : ${name}`);
 }
 sayHi("Ratchanon Traitiprat")
+const data = require('./alternative')
+console.log(data);
+require('./mind-grenade')
