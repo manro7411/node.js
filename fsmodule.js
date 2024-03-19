@@ -24,7 +24,8 @@ readFile('/Users/sleanz/Desktop/Desktop - MacBook Pro ของRatchanon/node.js
                 console.log(err);
                 return
             }
-            console.log(result);
+            console.log('done with this task');
         })
     })
 })
+console.log('starting next task');
